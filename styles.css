@@ -1,0 +1,354 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@font-face {
+  font-family: LexendDeca;
+  src: url("./assets/fonts/LexendDeca-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+body {
+  margin: 0;
+  background-color: hsl(233, 47%, 7%);
+}
+
+.card-container {
+  background-color: hsl(244, 38%, 16%);
+}
+
+h1,
+h2 {
+  color: white;
+  font-family: Inter;
+  font-weight: 700;
+  text-align: center;
+}
+
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+p {
+  font-family: LexendDeca;
+  font-weight: 400;
+  text-align: center;
+  font-size: 15px;
+}
+
+.description {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.item {
+  margin: 0;
+}
+
+.item-label {
+  color: hsla(0, 0%, 100%, 0.6);
+  margin: 0 0 25% 0;
+}
+
+@media only screen and (max-width: 426px) {
+  body {
+    padding: 5%;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-rows: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 5%;
+  }
+
+  .img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .img-overlay {
+    background-color: hsl(277, 64%, 61%, 0.5);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-img {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    display: block;
+  }
+
+  .insights-container {
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    padding: 5%;
+  }
+
+  .description {
+    line-height: 1.6;
+    margin-bottom: 15%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  body {
+    padding: 10% 5% 10% 5%;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-rows: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 60%;
+    margin: 0 auto 0 auto;
+  }
+
+  .img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .img-overlay {
+    background-color: hsl(277, 64%, 61%, 0.5);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-img {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    display: block;
+  }
+
+  .insights-container {
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    padding: 5%;
+    height: 80%;
+  }
+
+  .description {
+    line-height: 1.6;
+    margin-bottom: 15%;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+  body {
+    padding: 10% 5% 10% 5%;
+  }
+
+  .card-container {
+    border-radius: 15px;
+    width: 60%;
+    margin: 0 auto 0 auto;
+  }
+
+  .insights-container {
+    grid-area: insights-container;
+    padding: 8%;
+  }
+  .img-container {
+    grid-area: img-container;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .img-overlay {
+    background-color: hsl(277, 64%, 61%, 0.5);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .card-img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    display: block;
+  }
+
+  .title {
+    margin-top: 0;
+  }
+
+  .description {
+    margin-bottom: 7%;
+  }
+
+  .numbers-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .item-label {
+    margin: 0 0 5% 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  body {
+    padding: 20% 10% 20% 10%;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "insights-container img-container";
+    border-radius: 15px;
+  }
+
+  .insights-container {
+    grid-area: insights-container;
+    padding: 8%;
+  }
+  .img-container {
+    grid-area: img-container;
+    border-radius: 0 15px 15px 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 15px 15px 0;
+  }
+
+  .img-overlay {
+    background-color: hsl(277, 64%, 61%, 0.5);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+  }
+
+  .card-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+  }
+
+  .numbers-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .item-label {
+    margin: 0;
+  }
+
+  .title,
+  .description,
+  .item,
+  .item-label {
+    text-align: left;
+  }
+
+  .description {
+    margin-bottom: 10%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  body {
+    padding: 20% 10% 20% 10%;
+  }
+
+  .card-container {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "insights-container img-container";
+    border-radius: 15px;
+  }
+
+  .title,
+  .description,
+  .item,
+  .item-label {
+    text-align: left;
+  }
+
+  .insights-container {
+    grid-area: insights-container;
+    padding: 12%;
+  }
+  .img-container {
+    grid-area: img-container;
+  }
+
+  .img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 15px 15px 0;
+  }
+
+  .img-overlay {
+    background-color: hsl(277, 64%, 61%, 0.5);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+  }
+
+  .card-img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    z-index: 0;
+    display: block;
+  }
+
+  .description {
+    line-height: 1.8;
+    margin-bottom: 15%;
+  }
+
+  .numbers-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .item-label {
+    margin: 0;
+  }
+}
